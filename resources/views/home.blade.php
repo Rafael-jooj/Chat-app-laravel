@@ -15,6 +15,8 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+
+                    <a href="{{ url('/chat') }}">Chat</a>
                 </div>
             </div>
         </div>
