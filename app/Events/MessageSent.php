@@ -40,6 +40,8 @@ use App\Models\User;
 
 class MessageSent implements ShouldBroadcast
 {
+    use InteractsWithSockets, SerializesModels;
+
     public $user;
     public $message;
 
@@ -53,6 +55,6 @@ class MessageSent implements ShouldBroadcast
     {
         return new PrivateChannel('chat');
     }
-    
+
 
 }
